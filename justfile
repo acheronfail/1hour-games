@@ -6,5 +6,10 @@ setup:
   npm install
 
 # start local dev
-dev:
-  npm run start
+dev name:
+  ./node_modules/.bin/esbuild \
+    --bundle \
+    --serve=localhost:8000 \
+    --servedir={{name}}/www \
+    --outdir={{name}}/www/js \
+    {{name}}/src/index.ts
