@@ -10,6 +10,6 @@ dev name:
   ./node_modules/.bin/esbuild \
     --bundle \
     --serve=localhost:8000 \
-    --servedir={{name}}/www \
-    --outdir={{name}}/www/js \
-    {{name}}/src/index.ts
+    --servedir=www \
+    --outdir=www/js \
+    {{name}}/index.ts
