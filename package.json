@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "esbuild src/index.ts --bundle --serve=localhost:8000 --servedir=www --outdir=www/js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.2"
+  }
+}
